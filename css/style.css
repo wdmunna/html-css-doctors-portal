@@ -1,0 +1,498 @@
+/* Basic-changes */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Nav-Bar */
+nav {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.main-logo a {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+}
+.menu-item ul {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+.menu-item ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.menu-item ul li :hover {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 4px 10px;
+    background-color: #3A4256;
+    color: #D4D9E3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.nav-toggle {
+    display: none;
+}
+.hero-container-img-for-mobile {
+    display: none;
+}
+/* Hero-Bg-Img */
+.hero-bg-image {
+    background-image: url("../img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 80px;
+}
+.hero-container {
+    color: #3A4256;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.hero-content h1 {
+    font-weight: 700;
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+.hero-content p {
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+.hero-content button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #19D3AE;
+    padding: 10px 20px;
+    border: 1px solid #19D3AE;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.hero-content button:hover {
+    background-color: #0FCFEC;
+}
+.contact {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    align-items: center;
+    gap: 40px;
+    padding-top: 80px;
+    color: #FFFFFF;
+}
+.hero-container-opening-hours {
+    display: flex;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    align-items: center;
+    background-color: #19D3AE;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 2s;
+}
+.hero-container-opening-hours:hover {
+    background-color: #3A4256;
+    transition: 2s;
+}
+.hero-container-visit-our-location {
+    display: flex;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    align-items: center;
+    background-color: #0FCFEC;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 2s;
+}
+.hero-container-visit-our-location:hover {
+    background-color: #3A4256;
+    transition: 2s;
+}
+.hero-container-contact-us-now {
+    display: flex;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    align-items: center;
+    background-color: #19D3AE;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 2s;
+}
+.hero-container-contact-us-now:hover {
+    background-color: #3A4256;
+    transition: 2s;
+}
+.contact-content h3 {
+    padding-bottom: 10px;
+}
+/* Services-Section */
+.section-head {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+.section-head div h3 {
+    font-family: "Open Sans", sans-serif;
+    width: 700;
+    size: 20px;
+    color: #19D3AE;
+}
+.section-head div h2 {
+    font-family: "Open Sans", sans-serif;
+    width: 400;
+    font-size: 36px;
+    color: #3A4256;
+}
+/* services-item */
+.ourservices {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.service-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    padding: 50px 50px;
+    cursor: context-menu;
+}
+.service-item:hover {
+    box-shadow: 5px 8px 55px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.services-item-image {
+    display: flex;
+    justify-content: center;
+}
+.services-item-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+.services-item-content div h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3A4256;
+    padding-bottom: 15px;
+}
+.services-item-content div p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+/* service */
+.service-content {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 250px;
+}
+.service-content div h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #3A4256;
+    padding-bottom: 20px;
+}
+.service-content div p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    padding-bottom: 30px;
+}
+.service-content div button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #19D3AE;
+    padding: 5px 10px;
+    border: 1px solid #19D3AE;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.service-content div button:hover {
+    background-color: #0FCFEC;
+}
+/* Appointment-Section */
+.appointment-section {
+    padding-bottom: 50px;
+    padding-top: 150px;
+}
+.appointment-bg-img {
+    background-image: url(../img/appointment-bg-blue1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-right: 250px;
+}
+.appointment-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.doctor-img  img {
+    margin-top: -130px;
+    margin-bottom: -6px;
+}
+.appoinment h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #19D3AE;
+    padding-bottom: 15px;
+}
+.appoinment h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+.appoinment p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+.appoinment button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #19D3AE;
+    padding: 5px 10px;
+    border: 1px solid #19D3AE;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.appoinment button:hover {
+    background-color: #0FCFEC;
+}
+/* Testimonial */
+.testimonial {
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.testimonial-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonial-head div h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #19D3AE;
+}
+.testimonial-head div h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: #3A4256;
+}
+/* Testimonial-Item */
+.testimonial-item {
+    display: flex;
+    gap: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.testimonial-item-details {
+    padding: 50px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 18px;
+    cursor: context-menu;
+}
+.testimonial-item-details:hover {
+    box-shadow: 5px 8px 55px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.testimonial-item-details div p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    padding-bottom: 50px;
+}
+.testimonial-item-details div h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3A4256;
+}
+.testimonial-item-details div h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.testimonial-item-person-details {
+    display: flex;
+    gap: 30px;
+}
+.testimonial-item-person-details img {
+    border: 3px solid #19D3AE;
+    border-radius: 50%;
+}
+/* Contact Part */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 108px;
+}
+.contact-bg-img {
+    background-image: url("../img/appointment-bg-blue2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contact-section-head h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: #19D3AE;
+}
+.contact-section-head h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+/* Input form */
+.email {
+    padding-bottom: 20px;
+}
+.email input {
+    padding: 15px 20px;
+    padding-right: 200px;
+    border: 1px solid #3A425666;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3A425666;
+}
+.subject {
+    padding-bottom: 20px;
+}
+.subject input {
+    padding: 15px 20px;
+    padding-right: 200px;
+    border: 1px solid #3A425666;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3A425666;
+}
+.your-message {
+    padding-bottom: 20px;
+}
+.your-message input {
+    padding: 15px 20px;
+    padding-right: 200px;
+    border: 1px solid #3A425666;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3A425666;
+    padding-bottom: 100px;
+}
+.submit input {
+    padding: 15px 40px;
+    border: 1px solid #19D3AE;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #19D3AE;
+    cursor: pointer;
+}
+.submit input:hover {
+    background-color: #0FCFEC;
+}
+/*  footer  */
+.footer-bg {
+    background-image: url(../img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+.footer-item div h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #939393;
+    padding-bottom: 10px;
+}
+.footer-item div p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3A4256;
+    padding-top: 10px;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.copyright b {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
